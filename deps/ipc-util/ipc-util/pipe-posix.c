@@ -15,3 +15,38 @@
  */
 
 /* TODO */
+
+#include "pipe.h"
+
+/* pipe specific functions */
+
+
+
+/* Interface functions */
+
+bool ipc_pipe_server_start(ipc_pipe_server_t *pipe, const char *name,
+			   ipc_pipe_read_t read_callback, void *param)
+{
+
+}
+
+void ipc_pipe_server_free(ipc_pipe_server_t *pipe)
+{
+
+}
+
+bool ipc_pipe_client_open(ipc_pipe_client_t *pipe, const char *name)
+{
+
+}
+
+void ipc_pipe_client_free(ipc_pipe_client_t *pipe)
+{
+
+}
+
+bool ipc_pipe_client_write(ipc_pipe_client_t *pipe, const void *data,
+			   size_t size)
+{
+
+}
