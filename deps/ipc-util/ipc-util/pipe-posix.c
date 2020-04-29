@@ -17,6 +17,7 @@
 /* TODO */
 
 #include "pipe.h"
+#include <sys/socket.h>
 
 /* pipe specific functions */
 

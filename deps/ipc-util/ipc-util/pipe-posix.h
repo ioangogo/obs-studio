@@ -17,5 +17,23 @@
 #pragma once
 
 #include <pthread.h>
+#include <sys/socket.h>
 
 /* TODO */
+struct ipc_pipe_server {
+	/*
+	* Windows stuff, work out what is needed on the unix side
+	*/
+	// OVERLAPPD overlap;
+	// HANDLE handle;
+	// HANDLE ready_event;
+	// HANDLE thread;
+
+	/* This is basic input output suff, comment what they are in the unix world */
+	uint8_t *read_data;
+	size_t size;
+	size_t capacity;
+
+	ipc_pipe_read_t read_callback;
+	void *param;
+};
